@@ -33,7 +33,7 @@ h1,
 h2,
 h3,
 .fw-bold {
-  font-weight: 700 !important;
+  font-weight: 500 !important;
 }
 
 h4,
@@ -141,7 +141,7 @@ h6,
 /*** Hero Header ***/
 .hero-header {
   margin-top: -75px;
-  background: url(https://img.freepik.com/free-vector/gradient-network-connection-background_23-2148874050.jpg)
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY0WjhAszDKKw7lRs3DtLDOFI7ouPnegI6UA&s)
     center center no-repeat;
   background-size: cover;
 
