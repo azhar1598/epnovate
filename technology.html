@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>ARS Software Solutions</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <style>
+      body {
+        background-color: #f7f7f7;
+      }
+
+      .card-icon {
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+      }
+
+      .card-title {
+        display: flex;
+        align-items: center;
+      }
+
+      .section-title {
+        background-color: #f8f9fa;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="spinner-grow text-primary"
+        style="width: 3rem; height: 3rem"
+        role="status"
+      >
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top bg-light border-bottom">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light py-3">
+          <a class="navbar-brand" href="#">
+            <!-- <img src="path_to_your_logo.png" alt="EPNOVATE TECHNOLOGY" height="40"> -->
+            <h2>ARS Software Solutions</h2>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav">
+              <li
+                class="nav-item dropdown"
+                style="display: flex; justify-content: center"
+              >
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="servicesDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Services
+                </a>
+                <div
+                  class="dropdown-menu p-4"
+                  aria-labelledby="servicesDropdown"
+                  style="min-width: 900px"
+                >
+                  <div class="row">
+                    <!-- First row with 3 items -->
+                    <div class="col-12 col-md-4">
+                      <h6 class="dropdown-header">SAP</h6>
+                      <a class="dropdown-item" href="#">S4 HANA Solution</a>
+                      <a class="dropdown-item" href="#">SAP Upgradation</a>
+                      <a class="dropdown-item" href="#">SAP Implementation</a>
+                      <a class="dropdown-item" href="#">SAP Consulting</a>
+                      <a class="dropdown-item" href="#">SAP Support</a>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <h6 class="dropdown-header">WEB DEVELOPMENT</h6>
+                      <a class="dropdown-item" href="#"
+                        >Front-end Development</a
+                      >
+                      <a class="dropdown-item" href="#">Back-end Development</a>
+                      <a class="dropdown-item" href="#"
+                        >Full Stack Development</a
+                      >
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <h6 class="dropdown-header">MOBILE DEVELOPMENT</h6>
+                      <a class="dropdown-item" href="#">IOS Development</a>
+                      <a class="dropdown-item" href="#"
+                        >Android App Development</a
+                      >
+                      <a class="dropdown-item" href="#"
+                        >Cross-Platform Development</a
+                      >
+                    </div>
+                  </div>
+
+                  <div class="row mt-4">
+                    <!-- Second row with 2 items -->
+                    <div class="col-12 col-md-6">
+                      <h6 class="dropdown-header">IOT DEVELOPMENT</h6>
+                      <a class="dropdown-item" href="#">IOT Service 1</a>
+                      <a class="dropdown-item" href="#">IOT Service 2</a>
+                      <a class="dropdown-item" href="#">IOT Service 3</a>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <h6 class="dropdown-header">BLOCK CHAIN</h6>
+                      <a class="dropdown-item" href="#"
+                        >Block Chain Service 1</a
+                      >
+                      <a class="dropdown-item" href="#"
+                        >Block Chain Service 2</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Technology</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="companyDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Company
+                </a>
+                <div class="dropdown-menu" aria-labelledby="companyDropdown">
+                  <!-- Company dropdown items -->
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Industry</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <a href="#" class="btn btn-primary ms-lg-3"
+            >Book A Free Consultation</a
+          >
+        </nav>
+      </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Hero Start -->
+    <!-- Hero Section -->
+    <div class="container-fluid pt-5 bg-primary hero-header">
+      <div class="container py-5">
+        <div class="row g-5 pt-5">
+          <!-- Left Column: Text Section -->
+          <div class="col-lg-6 align-self-center text-center text-lg-start">
+            <h1
+              class="display-4 text-white mb-4"
+              style="font-size: 36px; font-weight: bold; color: #b8a8d3"
+            >
+              Programming And Its Frameworks To Be Aware Of In 2022
+            </h1>
+            <p class="text-white mb-4" style="font-size: 18px">
+              Programming is the base for processing frameworks and building all
+              kinds of applications relevant to the modern world.
+            </p>
+            <p class="text-white mb-4" style="font-size: 16px">
+              Computers understand instructions that are written in a specific
+              syntactic form called a programming language.
+            </p>
+            <p class="text-white" style="font-size: 14px">
+              Programming is a fundamental skill to be learned worldwide for
+              designing and developing applications in various platforms and
+              website interactions.
+            </p>
+          </div>
+
+          <!-- Right Column: Image Section -->
+          <div class="col-lg-6 align-self-end text-center text-lg-end">
+            <img
+              class="img-fluid"
+              src="https://epnovate.com/wp-content/uploads/2021/12/30495-Converted.png"
+              alt="Programming Illustration"
+              style="max-height: 300px"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero End -->
+
+    <div class="container my-5">
+      <div class="section-title text-center">
+        <h2>Front End</h2>
+        <p>
+          A frontend is the foundation of graphical interface development
+          visible to the users
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card p-3">
+            <div class="card-title">
+              <img
+                src="https://epnovate.com/wp-content/uploads/2021/12/angular.png"
+                alt="Angular"
+                class="card-icon"
+              />
+              <h5>Angular</h5>
+            </div>
+            <p>
+              Angular is a platform for building mobile and desktop web
+              applications. It provides a robust framework for creating dynamic
+              and modern web applications.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <div class="card p-3">
+            <div class="card-title">
+              <img
+                src="https://epnovate.com/wp-content/uploads/2021/12/react-js.png"
+                alt="ReactJS"
+                class="card-icon"
+              />
+              <h5>ReactJS</h5>
+            </div>
+            <p>
+              React is a JavaScript library for building user interfaces. It is
+              maintained by Facebook and a community of individual developers
+              and companies.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <div class="card p-3">
+            <div class="card-title">
+              <img
+                src="https://epnovate.com/wp-content/uploads/2021/12/Vue-js.png"
+                alt="VueJS"
+                class="card-icon"
+              />
+              <h5>VueJS</h5>
+            </div>
+            <p>
+              Vue.js is an open-source JavaScript framework for building user
+              interfaces and single-page applications.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <div class="card p-3">
+            <div class="card-title">
+              <img
+                src="https://epnovate.com/wp-content/uploads/2021/12/javascript.png"
+                alt="JavaScript"
+                class="card-icon"
+              />
+              <h5>JavaScript</h5>
+            </div>
+            <p>
+              JavaScript is the world's most popular programming language. It is
+              essential for web development and creating interactive web pages.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <div class="card p-3">
+            <div class="card-title">
+              <img
+                src="https://epnovate.com/wp-content/uploads/2021/12/Backbone.png"
+                alt="BackboneJS"
+                class="card-icon"
+              />
+              <h5>BackboneJS</h5>
+            </div>
+            <p>
+              Backbone.js is a JavaScript library with a RESTful JSON interface
+              and is based on the Model–View–Controller (MVC) design paradigm.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <div class="card p-3">
+            <div class="card-title">
+              <img
+                src="https://epnovate.com/wp-content/uploads/2021/12/Ember.png"
+                alt="EmberJS"
+                class="card-icon"
+              />
+              <h5>EmberJS</h5>
+            </div>
+            <p>
+              Ember.js is a productive, battle-tested JavaScript framework for
+              building modern web applications.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-title text-center">
+        <h2>Back End</h2>
+        <p>
+          It is commonly known as the server-side of the website OR mobile
+          application.
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card p-3">
+            <div class="card-title">
+              <img
+                src="https://epnovate.com/wp-content/uploads/2021/12/Ruby_on_Rails-Logo.png"
+                alt="Ruby on Rails"
+                class="card-icon"
+              />
+              <h5>Ruby on Rails</h5>
+            </div>
+            <p>
+              Ruby on Rails is a server-side web application framework written
+              in Ruby under the MIT License. It is a model-view-controller (MVC)
+              framework.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <div class="card p-3">
+            <div class="card-title">
+              <img
+                src="https://epnovate.com/wp-content/uploads/2021/12/node-js.png"
+                alt="NodeJS"
+                class="card-icon"
+              />
+              <h5>NodeJS</h5>
+            </div>
+            <p>
+              Node.js is a JavaScript runtime built on Chrome's V8 JavaScript
+              engine. It allows developers to build scalable network
+              applications.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <div class="card p-3">
+            <div class="card-title">
+              <img
+                src="https://epnovate.com/wp-content/uploads/2021/12/Golang.png"
+                alt="Golang"
+                class="card-icon"
+              />
+              <h5>Golang</h5>
+            </div>
+            <p>
+              Golang is an open-source programming language that makes it easy
+              to build simple, reliable, and efficient software.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <div class="card p-3">
+            <div class="card-title">
+              <img
+                src="https://epnovate.com/wp-content/uploads/2021/12/laravel.png"
+                alt="Laravel"
+                class="card-icon"
+              />
+              <h5>Laravel</h5>
+            </div>
+            <p>
+              Laravel is a web application framework with expressive, elegant
+              syntax. It provides tools for routing, authentication, sessions,
+              and caching.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <div class="card p-3">
+            <div class="card-title">
+              <img
+                src="https://epnovate.com/wp-content/uploads/2021/12/net.png"
+                alt="NET Core"
+                class="card-icon"
+              />
+              <h5>NET Core</h5>
+            </div>
+            <p>
+              NET Core is a free, cross-platform, open-source developer platform
+              for building many different types of applications.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <div class="card p-3">
+            <div class="card-title">
+              <img
+                src="https://epnovate.com/wp-content/uploads/2021/12/java.png"
+                alt="Java"
+                class="card-icon"
+              />
+              <h5>Java</h5>
+            </div>
+            <p>
+              Java is a high-level, class-based, object-oriented programming
+              language that is designed to have as few implementation
+              dependencies as possible.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <div class="card p-3">
+            <div class="card-title">
+              <img
+                src="https://epnovate.com/wp-content/uploads/2021/12/paython.png"
+                alt="Python"
+                class="card-icon"
+              />
+              <h5>Python</h5>
+            </div>
+            <p>
+              Python is an interpreted, high-level, general-purpose programming
+              language. Its design philosophy emphasizes code readability.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 footer pt-5">
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+            <a href="index.html" class="d-inline-block mb-3">
+              <h1 class="text-white">ARS Software Solutions</h1>
+            </a>
+            <p class="mb-0">
+              Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor
+              sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem
+              et sit, sed stet no labore lorem sit. Sanctus clita duo justo et
+              tempor
+            </p>
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+            <h5 class="text-white mb-4">Get In Touch</h5>
+            <div class="d-flex mb-3">
+              <i
+                class="fa fa-map-marker-alt me-3"
+                style="vertical-align: top"
+              ></i>
+              <span>
+                Shoreham-by-Sea, Little High Street<br />
+                West Sussex <br />
+                BN43 5EG<br />
+                United Kingdom
+              </span>
+            </div>
+            <p><i class="fa fa-phone-alt me-3"></i>+91 7585787924</p>
+            <p>
+              <i class="fa fa-envelope me-3"></i>Info@arssoftwaresolutions.co.uk
+            </p>
+            <div class="d-flex pt-2">
+              <a class="btn btn-outline-light btn-social" href=""
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a class="btn btn-outline-light btn-social" href=""
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a class="btn btn-outline-light btn-social" href=""
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a class="btn btn-outline-light btn-social" href=""
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a class="btn btn-outline-light btn-social" href=""
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-2 wow fadeIn" data-wow-delay="0.5s">
+            <h5 class="text-white mb-4">Popular Link</h5>
+            <a class="btn btn-link" href="">About Us</a>
+            <a class="btn btn-link" href="">Contact Us</a>
+            <a class="btn btn-link" href="">Privacy Policy</a>
+            <a class="btn btn-link" href="">Terms & Condition</a>
+            <a class="btn btn-link" href="">Career</a>
+          </div>
+          <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
+            <h5 class="text-white mb-4">Our Services</h5>
+            <a class="btn btn-link" href="">Robotic Automation</a>
+            <a class="btn btn-link" href="">Machine learning</a>
+            <a class="btn btn-link" href="">Predictive Analysis</a>
+            <a class="btn btn-link" href="">Data Science</a>
+            <a class="btn btn-link" href="">Robot Technology</a>
+          </div>
+        </div>
+      </div>
+      <div class="container wow fadeIn" data-wow-delay="0.1s">
+        <div class="copyright">
+          <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+              <!-- &copy; <a class="border-bottom" href="#">Azhar M</a>, All Right Reserved. -->
+
+              <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+              <div class="footer-menu">
+                <a href="">Home</a>
+                <a href="">Cookies</a>
+                <a href="">Help</a>
+                <a href="">FAQs</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
