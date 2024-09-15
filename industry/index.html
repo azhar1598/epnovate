@@ -8,7 +8,7 @@
     <meta content="" name="description" />
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon" />
+    <link href="../img/favicon.ico" rel="icon" />
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,14 +29,17 @@
     />
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet" />
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="../lib/animate/animate.min.css" rel="stylesheet" />
+    <link
+      href="../lib/owlcarousel/assets/owl.carousel.min.css"
+      rel="stylesheet"
+    />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
 
     <style>
       body {
@@ -82,9 +85,11 @@
     <div class="container-fluid sticky-top bg-light border-bottom">
       <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light py-3">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="/#">
             <!-- <img src="path_to_your_logo.png" alt="EPNOVATE TECHNOLOGY" height="40"> -->
-            <h2>ARS Software Solutions</h2>
+            <a href="/">
+              <h4>ARS Software Solutions</h4>
+            </a>
           </a>
           <button
             class="navbar-toggler"
@@ -102,13 +107,14 @@
             id="navbarNavDropdown"
           >
             <ul class="navbar-nav">
+              <!-- Services Section -->
               <li
-                class="nav-item dropdown"
+                class="nav-item dropdown d-none d-lg-block"
                 style="display: flex; justify-content: center"
               >
                 <a
                   class="nav-link dropdown-toggle"
-                  href="#"
+                  href="/#"
                   id="servicesDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -125,29 +131,47 @@
                     <!-- First row with 3 items -->
                     <div class="col-12 col-md-4">
                       <h6 class="dropdown-header">SAP</h6>
-                      <a class="dropdown-item" href="#">S4 HANA Solution</a>
-                      <a class="dropdown-item" href="#">SAP Upgradation</a>
-                      <a class="dropdown-item" href="#">SAP Implementation</a>
-                      <a class="dropdown-item" href="#">SAP Consulting</a>
-                      <a class="dropdown-item" href="#">SAP Support</a>
+                      <a class="dropdown-item" href="/sap-s4-hana-services"
+                        >S4 HANA Solution</a
+                      >
+                      <a class="dropdown-item" href="/sap-upgradation"
+                        >SAP Upgradation</a
+                      >
+                      <a
+                        class="dropdown-item"
+                        href="/sap-implementation-services"
+                        >SAP Implementation</a
+                      >
+                      <a class="dropdown-item" href="/sap-consulting-services"
+                        >SAP Consulting</a
+                      >
+                      <a class="dropdown-item" href="/sap-support"
+                        >SAP Support</a
+                      >
                     </div>
                     <div class="col-12 col-md-4">
                       <h6 class="dropdown-header">WEB DEVELOPMENT</h6>
-                      <a class="dropdown-item" href="#"
+                      <a class="dropdown-item" href="/front-end-development"
                         >Front-end Development</a
                       >
-                      <a class="dropdown-item" href="#">Back-end Development</a>
-                      <a class="dropdown-item" href="#"
+                      <a class="dropdown-item" href="/back-end-development"
+                        >Back-end Development</a
+                      >
+                      <a class="dropdown-item" href="/full-stack-development"
                         >Full Stack Development</a
                       >
                     </div>
                     <div class="col-12 col-md-4">
                       <h6 class="dropdown-header">MOBILE DEVELOPMENT</h6>
-                      <a class="dropdown-item" href="#">IOS Development</a>
-                      <a class="dropdown-item" href="#"
+                      <a class="dropdown-item" href="/ios-development"
+                        >IOS Development</a
+                      >
+                      <a class="dropdown-item" href="/android-app-development"
                         >Android App Development</a
                       >
-                      <a class="dropdown-item" href="#"
+                      <a
+                        class="dropdown-item"
+                        href="/cross-platform-development"
                         >Cross-Platform Development</a
                       >
                     </div>
@@ -155,53 +179,239 @@
 
                   <div class="row mt-4">
                     <!-- Second row with 2 items -->
-                    <div class="col-12 col-md-6">
-                      <h6 class="dropdown-header">IOT DEVELOPMENT</h6>
-                      <a class="dropdown-item" href="#">IOT Service 1</a>
-                      <a class="dropdown-item" href="#">IOT Service 2</a>
-                      <a class="dropdown-item" href="#">IOT Service 3</a>
+                    <div class="col-12 col-md-4">
+                      <a class="dropdown-item" href="/iot-development">
+                        <h6 class="dropdown-header">IOT DEVELOPMENT</h6>
+                      </a>
                     </div>
-                    <div class="col-12 col-md-6">
-                      <h6 class="dropdown-header">BLOCK CHAIN</h6>
-                      <a class="dropdown-item" href="#"
-                        >Block Chain Service 1</a
-                      >
-                      <a class="dropdown-item" href="#"
-                        >Block Chain Service 2</a
-                      >
+                    <div class="col-12 col-md-4">
+                      <a class="dropdown-item" href="/blockchain-development">
+                        <h6 class="dropdown-header">BLOCK CHAIN</h6>
+                      </a>
                     </div>
                   </div>
                 </div>
               </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="/technology.html">Technology</a>
+              <!-- Mobile View: Services with collapsible submenus -->
+              <li class="nav-item d-lg-none">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="/#"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#mobileServices"
+                  aria-expanded="false"
+                  aria-controls="mobileServices"
+                >
+                  Services
+                </a>
+                <div class="collapse" id="mobileServices">
+                  <ul class="list-unstyled ps-3">
+                    <!-- SAP Section -->
+                    <li>
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="/#"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#sapServices"
+                        aria-expanded="false"
+                        aria-controls="sapServices"
+                        >SAP</a
+                      >
+                      <ul class="collapse list-unstyled ps-3" id="sapServices">
+                        <li>
+                          <a class="dropdown-item" href="/sap-s4-hana-services"
+                            >S4 HANA Solution</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="/sap-upgradation"
+                            >SAP Upgradation</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="/sap-implementation-services"
+                            >SAP Implementation</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="/sap-consulting-services"
+                            >SAP Consulting</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="/sap-support"
+                            >SAP Support</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+
+                    <!-- Web Development Section -->
+                    <li>
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="/#"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#webDevServices"
+                        aria-expanded="false"
+                        aria-controls="webDevServices"
+                        >WEB DEVELOPMENT</a
+                      >
+                      <ul
+                        class="collapse list-unstyled ps-3"
+                        id="webDevServices"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="/front-end-development"
+                            >Front-end Development</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="/back-end-development"
+                            >Back-end Development</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="/full-stack-development"
+                            >Full Stack Development</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+
+                    <!-- Mobile Development Section -->
+                    <li>
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="/#"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#mobileDevServices"
+                        aria-expanded="false"
+                        aria-controls="mobileDevServices"
+                        >MOBILE DEVELOPMENT</a
+                      >
+                      <ul
+                        class="collapse list-unstyled ps-3"
+                        id="mobileDevServices"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="/ios-development"
+                            >IOS Development</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="/android-app-development"
+                            >Android App Development</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="/cross-platform-development"
+                            >Cross-Platform Development</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+
+                    <!-- IOT Development Section -->
+                    <li>
+                      <a class="nav-link" href="/iot-development"
+                        >IOT DEVELOPMENT</a
+                      >
+                    </li>
+
+                    <!-- Block Chain Section -->
+                    <li>
+                      <a class="nav-link" href="/blockchain-development"
+                        >Block Chain</a
+                      >
+                    </li>
+                  </ul>
+                </div>
               </li>
-              <li class="nav-item dropdown">
+
+              <li class="nav-item">
+                <a class="nav-link" href="/technology">Technology</a>
+              </li>
+
+              <li class="nav-item dropdown d-none d-lg-block">
                 <a
                   class="nav-link dropdown-toggle"
                   href="#"
                   id="companyDropdown"
                   role="button"
-                  data-bs-toggle="dropdown"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
                   aria-expanded="false"
                 >
                   Company
                 </a>
-                <div class="dropdown-menu" aria-labelledby="companyDropdown">
-                  <!-- Company dropdown items -->
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/about">About US</a>
+                  <a class="dropdown-item" href="/career">Career</a>
+                  <a class="dropdown-item" href="/trusted-sap-partner/"
+                    >Trusted SAP Partner</a
+                  >
+                  <a class="dropdown-item" href="/working-with-us/"
+                    >Working With US</a
+                  >
                 </div>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/industry.html">Industry</a>
+              <!-- Mobile View: Company with collapsible submenus -->
+              <li class="nav-item d-lg-none">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="/#"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#mobileServicesCompany"
+                  aria-expanded="false"
+                  aria-controls="mobileServices"
+                >
+                  Company
+                </a>
+                <div class="collapse" id="mobileServicesCompany">
+                  <ul class="list-unstyled ps-3">
+                    <li>
+                      <a class="nav-link" href="/about/">About US</a>
+                    </li>
+                    <li>
+                      <a class="nav-link" href="/career/">Career</a>
+                    </li>
+                    <li>
+                      <a class="nav-link" href="/trusted-sap-partner/"
+                        >Trusted SAP Partner</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-link" href="/working-with-us/"
+                        >Working With Us</a
+                      >
+                    </li>
+                  </ul>
+                </div>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
+                <a class="nav-link" href="/industry">Industry</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact">Contact Us</a>
               </li>
             </ul>
           </div>
-          <a href="#" class="btn btn-primary ms-lg-3"
+
+          <!-- Book A Free Consultation button (visible only on large screens and above) -->
+          <a href="/contact" class="btn btn-primary ms-lg-3 d-none d-lg-block"
             >Book A Free Consultation</a
           >
         </nav>
@@ -414,14 +624,14 @@
       <div class="container py-5">
         <div class="row g-5">
           <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
-            <a href="index.html" class="d-inline-block mb-3">
+            <a href="/index" class="d-inline-block mb-3">
               <h1 class="text-white">ARS Software Solutions</h1>
             </a>
             <p class="mb-0">
-              Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor
-              sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem
-              et sit, sed stet no labore lorem sit. Sanctus clita duo justo et
-              tempor
+              At ARS Software Solutions, our mission is to provide the best in
+              class SAP solutions to our clients by reducing their operational
+              costs and maximizing the return on investment. We are focused on
+              the best business outcomes.
             </p>
           </div>
           <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.3s">
@@ -443,38 +653,38 @@
               <i class="fa fa-envelope me-3"></i>Info@arssoftwaresolutions.co.uk
             </p>
             <div class="d-flex pt-2">
-              <a class="btn btn-outline-light btn-social" href=""
+              <a class="btn btn-outline-light btn-social" href="/"
                 ><i class="fab fa-twitter"></i
               ></a>
-              <a class="btn btn-outline-light btn-social" href=""
+              <a class="btn btn-outline-light btn-social" href="/"
                 ><i class="fab fa-facebook-f"></i
               ></a>
-              <a class="btn btn-outline-light btn-social" href=""
+              <a class="btn btn-outline-light btn-social" href="/"
                 ><i class="fab fa-youtube"></i
               ></a>
-              <a class="btn btn-outline-light btn-social" href=""
+              <a class="btn btn-outline-light btn-social" href="/"
                 ><i class="fab fa-instagram"></i
               ></a>
-              <a class="btn btn-outline-light btn-social" href=""
+              <a class="btn btn-outline-light btn-social" href="/"
                 ><i class="fab fa-linkedin-in"></i
               ></a>
             </div>
           </div>
           <div class="col-md-6 col-lg-2 wow fadeIn" data-wow-delay="0.5s">
             <h5 class="text-white mb-4">Popular Link</h5>
-            <a class="btn btn-link" href="">About Us</a>
-            <a class="btn btn-link" href="">Contact Us</a>
-            <a class="btn btn-link" href="">Privacy Policy</a>
-            <a class="btn btn-link" href="">Terms & Condition</a>
-            <a class="btn btn-link" href="">Career</a>
+            <a class="btn btn-link" href="/">About Us</a>
+            <a class="btn btn-link" href="/">Contact Us</a>
+            <a class="btn btn-link" href="/">Privacy Policy</a>
+            <a class="btn btn-link" href="/">Terms & Condition</a>
+            <a class="btn btn-link" href="/">Career</a>
           </div>
           <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
             <h5 class="text-white mb-4">Our Services</h5>
-            <a class="btn btn-link" href="">Robotic Automation</a>
-            <a class="btn btn-link" href="">Machine learning</a>
-            <a class="btn btn-link" href="">Predictive Analysis</a>
-            <a class="btn btn-link" href="">Data Science</a>
-            <a class="btn btn-link" href="">Robot Technology</a>
+            <a class="btn btn-link" href="/">Robotic Automation</a>
+            <a class="btn btn-link" href="/">Machine learning</a>
+            <a class="btn btn-link" href="/">Predictive Analysis</a>
+            <a class="btn btn-link" href="/">Data Science</a>
+            <a class="btn btn-link" href="/">Robot Technology</a>
           </div>
         </div>
       </div>
@@ -482,16 +692,16 @@
         <div class="copyright">
           <div class="row">
             <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-              <!-- &copy; <a class="border-bottom" href="#">Azhar M</a>, All Right Reserved. -->
+              <!-- &copy; <a class="border-bottom" href="/#">Azhar M</a>, All Right Reserved. -->
 
               <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
             </div>
             <div class="col-md-6 text-center text-md-end">
               <div class="footer-menu">
-                <a href="">Home</a>
-                <a href="">Cookies</a>
-                <a href="">Help</a>
-                <a href="">FAQs</a>
+                <a href="/">Home</a>
+                <a href="/">Cookies</a>
+                <a href="/">Help</a>
+                <a href="/">FAQs</a>
               </div>
             </div>
           </div>
@@ -539,13 +749,13 @@
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="../lib/wow/wow.min.js"></script>
+    <script src="../lib/easing/easing.min.js"></script>
+    <script src="../lib/waypoints/waypoints.min.js"></script>
+    <script src="../lib/counterup/counterup.min.js"></script>
+    <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script src="../js/main.js"></script>
   </body>
 </html>

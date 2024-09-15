@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>ARS Software Solutions</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="../lib/animate/animate.min.css" rel="stylesheet" />
+    <link
+      href="../lib/owlcarousel/assets/owl.carousel.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="../css/style.css" rel="stylesheet" />
+
+    <style>
+      .header-section {
+        padding: 50px 0;
+      }
+
+      .section {
+        padding: 50px 0;
+      }
+
+      .section .row {
+        align-items: center;
+      }
+
+      .section-image {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+
+      .vision-mission {
+        background-color: #f0f8ff;
+        padding: 50px 0;
+      }
+
+      .vision-mission h5 {
+        font-weight: bold;
+      }
+
+      .final-section {
+        padding: 50px 0;
+      }
+
+      .final-section h4 {
+        font-weight: bold;
+      }
+
+      .section-title {
+        font-size: 40px !important;
+        font-weight: 600;
+      }
+
+      .section-title-new {
+        font-size: 32px;
+        font-weight: 600;
+      }
+      @media (max-width: 675px) {
+        .section-title-new {
+          font-size: 22px;
+          font-weight: 600;
+        }
+      }
+      .step-circle {
+        background-color: #e6f3ff;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        position: relative;
+        transition: transform 0.3s ease; /* Smooth transition for hover effect */
+      }
+
+      .step-circle span {
+        background-color: #007bff;
+        color: #fff;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+      }
+
+      .step-circle:hover {
+        transform: scale(1.2); /* Enlarges the circle on hover */
+      }
+
+      .step-item {
+        margin-top: 30px;
+      }
+
+      .step-item h5 {
+        margin-top: 15px;
+        font-weight: 600;
+      }
+
+      .step-item p {
+        margin-top: 10px;
+      }
+
+      .horizontal-line {
+        height: 2px;
+        background-color: #ddd;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="spinner-grow text-primary"
+        style="width: 3rem; height: 3rem"
+        role="status"
+      >
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+    <!-- Spinner End -->
+
+    <div class="container-fluid sticky-top bg-light border-bottom">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light py-3">
+          <a class="navbar-brand" href="/#">
+            <!-- <img src="path_to_your_logo.png" alt="EPNOVATE TECHNOLOGY" height="40"> -->
+            <a href="/">
+              <h4>ARS Software Solutions</h4>
+            </a>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav">
+              <!-- Services Section -->
+              <li
+                class="nav-item dropdown d-none d-lg-block"
+                style="display: flex; justify-content: center"
+              >
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="/#"
+                  id="servicesDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Services
+                </a>
+                <div
+                  class="dropdown-menu p-4"
+                  aria-labelledby="servicesDropdown"
+                  style="min-width: 900px"
+                >
+                  <div class="row">
+                    <!-- First row with 3 items -->
+                    <div class="col-12 col-md-4">
+                      <h6 class="dropdown-header">SAP</h6>
+                      <a class="dropdown-item" href="/sap-s4-hana-services"
+                        >S4 HANA Solution</a
+                      >
+                      <a class="dropdown-item" href="/sap-upgradation"
+                        >SAP Upgradation</a
+                      >
+                      <a
+                        class="dropdown-item"
+                        href="/sap-implementation-services"
+                        >SAP Implementation</a
+                      >
+                      <a class="dropdown-item" href="/sap-consulting-services"
+                        >SAP Consulting</a
+                      >
+                      <a class="dropdown-item" href="/sap-support"
+                        >SAP Support</a
+                      >
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <h6 class="dropdown-header">WEB DEVELOPMENT</h6>
+                      <a class="dropdown-item" href="/front-end-development"
+                        >Front-end Development</a
+                      >
+                      <a class="dropdown-item" href="/back-end-development"
+                        >Back-end Development</a
+                      >
+                      <a class="dropdown-item" href="/full-stack-development"
+                        >Full Stack Development</a
+                      >
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <h6 class="dropdown-header">MOBILE DEVELOPMENT</h6>
+                      <a class="dropdown-item" href="/ios-development"
+                        >IOS Development</a
+                      >
+                      <a class="dropdown-item" href="/android-app-development"
+                        >Android App Development</a
+                      >
+                      <a
+                        class="dropdown-item"
+                        href="/cross-platform-development"
+                        >Cross-Platform Development</a
+                      >
+                    </div>
+                  </div>
+
+                  <div class="row mt-4">
+                    <!-- Second row with 2 items -->
+                    <div class="col-12 col-md-4">
+                      <a class="dropdown-item" href="/iot-development">
+                        <h6 class="dropdown-header">IOT DEVELOPMENT</h6>
+                      </a>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <a class="dropdown-item" href="/blockchain-development">
+                        <h6 class="dropdown-header">BLOCK CHAIN</h6>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Mobile View: Services with collapsible submenus -->
+              <li class="nav-item d-lg-none">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="/#"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#mobileServices"
+                  aria-expanded="false"
+                  aria-controls="mobileServices"
+                >
+                  Services
+                </a>
+                <div class="collapse" id="mobileServices">
+                  <ul class="list-unstyled ps-3">
+                    <!-- SAP Section -->
+                    <li>
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="/#"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#sapServices"
+                        aria-expanded="false"
+                        aria-controls="sapServices"
+                        >SAP</a
+                      >
+                      <ul class="collapse list-unstyled ps-3" id="sapServices">
+                        <li>
+                          <a class="dropdown-item" href="/sap-s4-hana-services"
+                            >S4 HANA Solution</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="/sap-upgradation"
+                            >SAP Upgradation</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="/sap-implementation-services"
+                            >SAP Implementation</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="/sap-consulting-services"
+                            >SAP Consulting</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="/sap-support"
+                            >SAP Support</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+
+                    <!-- Web Development Section -->
+                    <li>
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="/#"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#webDevServices"
+                        aria-expanded="false"
+                        aria-controls="webDevServices"
+                        >WEB DEVELOPMENT</a
+                      >
+                      <ul
+                        class="collapse list-unstyled ps-3"
+                        id="webDevServices"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="/front-end-development"
+                            >Front-end Development</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="/back-end-development"
+                            >Back-end Development</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="/full-stack-development"
+                            >Full Stack Development</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+
+                    <!-- Mobile Development Section -->
+                    <li>
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="/#"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#mobileDevServices"
+                        aria-expanded="false"
+                        aria-controls="mobileDevServices"
+                        >MOBILE DEVELOPMENT</a
+                      >
+                      <ul
+                        class="collapse list-unstyled ps-3"
+                        id="mobileDevServices"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="/ios-development"
+                            >IOS Development</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="/android-app-development"
+                            >Android App Development</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="/cross-platform-development"
+                            >Cross-Platform Development</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+
+                    <!-- IOT Development Section -->
+                    <li>
+                      <a class="nav-link" href="/iot-development"
+                        >IOT DEVELOPMENT</a
+                      >
+                    </li>
+
+                    <!-- Block Chain Section -->
+                    <li>
+                      <a class="nav-link" href="/blockchain-development"
+                        >Block Chain</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/technology">Technology</a>
+              </li>
+
+              <li class="nav-item dropdown d-none d-lg-block">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="companyDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Company
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/about">About US</a>
+                  <a class="dropdown-item" href="/career">Career</a>
+                  <a class="dropdown-item" href="/trusted-sap-partner/"
+                    >Trusted SAP Partner</a
+                  >
+                  <a class="dropdown-item" href="/working-with-us/"
+                    >Working With US</a
+                  >
+                </div>
+              </li>
+              <!-- Mobile View: Company with collapsible submenus -->
+              <li class="nav-item d-lg-none">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="/#"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#mobileServicesCompany"
+                  aria-expanded="false"
+                  aria-controls="mobileServices"
+                >
+                  Company
+                </a>
+                <div class="collapse" id="mobileServicesCompany">
+                  <ul class="list-unstyled ps-3">
+                    <li>
+                      <a class="nav-link" href="/about/">About US</a>
+                    </li>
+                    <li>
+                      <a class="nav-link" href="/career/">Career</a>
+                    </li>
+                    <li>
+                      <a class="nav-link" href="/trusted-sap-partner/"
+                        >Trusted SAP Partner</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-link" href="/working-with-us/"
+                        >Working With Us</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/industry">Industry</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Book A Free Consultation button (visible only on large screens and above) -->
+          <a href="/contact" class="btn btn-primary ms-lg-3 d-none d-lg-block"
+            >Book A Free Consultation</a
+          >
+        </nav>
+      </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Hero Section -->
+    <div class="container-fluid pt-5 bg-primary hero-header-service-3">
+      <div class="container py-5">
+        <div class="row g-5 pt-5">
+          <!-- Left Column: Text Section -->
+          <div class="col-lg-6 align-self-center text-center text-lg-start">
+            <h1
+              class="display-4 text-white mb-4"
+              style="font-size: 36px; font-weight: bold; color: #b8a8d3"
+            >
+              SAP Consulting Services
+            </h1>
+            <p class="text-white mb-4" style="font-size: 18px">
+              Let us know your business needs and experience the seamless
+              digital transformation with SAP implementation. Our prominent SAP
+              consultants are skilled with the precise expertise to offer the
+              best SAP consulting services.
+            </p>
+            <a
+              href=""
+              class="btn btn-outline-light py-sm-3 px-sm-5 round animated slideInRight"
+              >Get Started On Your Project</a
+            >
+          </div>
+
+          <!-- Right Column: Image Section -->
+          <div class="col-lg-6 align-self-end text-center text-lg-end">
+            <img
+              class="img-fluid"
+              src="https://epnovate.com/wp-content/uploads/2021/12/30495-Converted.png"
+              alt="Programming Illustration"
+              style="max-height: 300px"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero End -->
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content" style="background: rgba(20, 24, 62, 0.7)">
+          <div class="modal-header border-0">
+            <button
+              type="button"
+              class="btn btn-square bg-white btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div
+            class="modal-body d-flex align-items-center justify-content-center"
+          >
+            <div class="input-group" style="max-width: 600px">
+              <input
+                type="text"
+                class="form-control bg-transparent border-light p-3"
+                placeholder="Type search keyword"
+              />
+              <button class="btn btn-light px-4">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+    <!-- About Start -->
+
+    <section class="header-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-right">
+            <img
+              src="https://epnovate.com/wp-content/uploads/2021/07/WhatsApp-Image-2021-07-16-at-6.03.32-PM.jpeg"
+              class="section-image"
+              alt="We Make SAP Simple"
+            />
+          </div>
+          <div class="col-md-6 d-flex flex-column justify-content-center">
+            <h2 class="section-title">How SAP Consulting Helps</h2>
+
+            <p style="font-size: 16px">
+              In this digital era, SAP consulting assists organizations in the
+              implementation of compatible solutions. SAP makes use of
+              artificial intelligence and hosts outstanding data handling
+              features for transforming business processes.
+            </p>
+            <p style="font-size: 16px">
+              With its implementation ranging from Human resources to Supply
+              Chain management, several organizations have realized the
+              potential of SAP in analysis, reporting, and data prediction.
+              Which has enabled the businesses in the execution of brilliant
+              decisions based on real-time data reports.
+            </p>
+            <p style="font-size: 16px">
+              Integrate the SAP technology in your business operations and
+              accomplish the benefits of this cutting-edge ERP. As a leading SAP
+              consulting company, ARS Software Solutions endeavors to deliver
+              our clients the best in class and easy-to-implement SAP industry
+              solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experts Section -->
+    <section class="section">
+      <div class="container">
+        <h2 class="text-center mb-4">Our SAP consulting services</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <h4 class="section-title-new">Migration</h4>
+            <p>
+              SAP-certified developers at ARS Software Solutions utilize a
+              heterogeneous migration system, ensuring a unified and risk-free
+              migration to the new SAP solution. All important business data
+              from the old databases, websites, third-party software, and
+              applications is securely transferred without any impairment to its
+              integrity.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="https://epnovate.com/wp-content/uploads/2020/08/web-development.png"
+              class="section-image"
+              alt="Experts"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              src="https://epnovate.com/wp-content/uploads/2020/08/back-end-development-it-concept_126283-67.png"
+              class="section-image"
+              alt="Experts"
+            />
+          </div>
+          <div class="col-md-6">
+            <h4 class="section-title-new">Implementation</h4>
+            <p>
+              As a certified SAP HANA consulting company, we help businesses set
+              up a SAP implementation plan that enables a complete business
+              overview and addresses critical requirements or challenges. Our
+              customer-first approach assists in the implementation of
+              appropriate, business-specific SAP solutions.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <h4 class="section-title-new">Upgradation</h4>
+            <p>
+              Upgrading from the existing SAP solution is considered a
+              challenging activity necessitating highly professional assistance.
+              Yet, it has never been much easier with our remarkable SAP
+              consulting services. The constant association between our experts
+              and your SAP team guarantees a smooth upgrade.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="https://epnovate.com/wp-content/uploads/2020/08/Web-Development-Services-Engcode-Digital-Marketing.png"
+              class="section-image"
+              alt="Experts"
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <h4 class="section-title-new">Benefits of SAP ERP Services</h4>
+
+            <ol>
+              <li>
+                Scaling of the solution in consonance with business growth
+              </li>
+              <li>Better supply chain control</li>
+              <li>
+                Adapts instantly conferring better control of supply chain
+              </li>
+              <li>
+                Inherent AI delivers novel contributions like conversational UP,
+                predicted delivery delay
+              </li>
+              <li>
+                The In-memory database offers real-time, linked, and single
+                basis of accuracy
+              </li>
+              <li>
+                Access to Big Datasets saves time, operational and hardware
+                costs
+              </li>
+              <li>
+                Platform optimization as a digital core for transitioning to
+                cloud environment
+              </li>
+            </ol>
+            <a
+              href=""
+              class="btn btn-outline-primary py-sm-3 px-sm-5 round animated slideInRight"
+              >Explore Our Work</a
+            >
+          </div>
+          <div class="col-md-6">
+            <img
+              src="https://epnovate.com/wp-content/uploads/2020/08/5-1-1796x2048.png"
+              class="section-image"
+              alt="Experts"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container py-5">
+        <h3 class="text-center mb-4">Features of the SAP Solution</h3>
+        <p class="text-center mb-5">
+          We are committed to embedding more effective SAP ERP solutions into
+          your business so that you can get desired business outcomes.
+        </p>
+
+        <!-- Grid of Business Verticals -->
+        <div class="row text-center">
+          <div class="col-lg-4 mb-4">
+            <div class="p-4 shadow-sm h-120 business-card">
+              <img
+                src="https://epnovate.com/wp-content/uploads/2021/06/h-flexibility.png"
+                class="card-img"
+                style="object-fit: contain; height: 80px"
+                alt="Banking and Financial"
+              />
+              <h5 class="mt-3">Flexibility</h5>
+              <p>
+                Employing SAP S/4HANA solutions ensures that you get a
+                customized app with highly responsive features, no matter what
+                your business deals in.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4">
+            <div class="p-4 shadow-sm h-100 business-card">
+              <img
+                src="https://epnovate.com/wp-content/uploads/2021/06/h-app-building.png"
+                class="card-img"
+                style="object-fit: contain; height: 80px"
+                alt="Banking and Financial"
+              />
+              <h5 class="mt-3">Enhanced App Building</h5>
+              <p>
+                App architecture built with S/4Hana contributes to a seamless
+                user experience while encouraging long-term engagement.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4">
+            <div class="p-4 shadow-sm h-100 business-card">
+              <img
+                src="https://epnovate.com/wp-content/uploads/2021/06/h-execution.png"
+                class="card-img"
+                style="object-fit: contain; height: 80px"
+                alt="Banking and Financial"
+              />
+              <h5 class="mt-3">Perfect Execution</h5>
+              <p>
+                Integrate your innovative ideas in the app architecture without
+                compromising on performance and functioning.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4">
+            <div class="p-4 shadow-sm h-120 business-card">
+              <img
+                src="https://epnovate.com/wp-content/uploads/2021/06/h-exp.png"
+                class="card-img"
+                style="object-fit: contain; height: 80px"
+                alt="Banking and Financial"
+              />
+
+              <h5 class="mt-3">Seamless User Experience</h5>
+              <p>
+                Migration to S/4 HANA ensures a seamless and extraordinary user
+                experience for business applications.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <div class="p-4 shadow-sm h-120 business-card">
+              <img
+                src="https://epnovate.com/wp-content/uploads/2021/06/h-interface.png"
+                class="card-img"
+                style="object-fit: contain; height: 80px"
+                alt="Banking and Financial"
+              />
+
+              <h5 class="mt-3">Latest Interface</h5>
+              <p>
+                Fulfill all user needs with the creative and intuitive interface
+                provided by the team of experts at S/4 HANA.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4">
+            <div class="p-4 shadow-sm h-120 business-card">
+              <img
+                src="https://epnovate.com/wp-content/uploads/2021/06/h-experiencee.png"
+                class="card-img"
+                style="object-fit: contain; height: 80px"
+                alt="Banking and Financial"
+              />
+
+              <h5 class="mt-3">User-centered Experience</h5>
+              <p>
+                Employ modern solutions for problems to meet user expectations
+                and improve app reception.
+              </p>
+            </div>
+          </div>
+
+          <!-- Add more cards as needed -->
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="container text-center">
+        <h2>Our SAP Service Process</h2>
+        <div class="row justify-content-center position-relative">
+          <!-- Step 1 -->
+          <div class="col-md-2 step-item">
+            <div class="step-circle">
+              <span>1</span>
+            </div>
+            <h5>Requirement Analysis</h5>
+            <p>
+              Critical for the success of the implementation, we place a higher
+              emphasis on understanding your business requirement from the
+              application.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="col-md-2 step-item">
+            <div class="step-circle">
+              <span>2</span>
+            </div>
+            <h5>Strategy Creation</h5>
+            <p>
+              Our expert consultants work toward framing a custom, user-defined
+              strategy to facilitate SAP migration with the required inputs.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="col-md-2 step-item">
+            <div class="step-circle">
+              <span>3</span>
+            </div>
+            <h5>Execution</h5>
+            <p>
+              It involves the incorporation of business-specific features and
+              modules in the SAP ERP to create a preferred application.
+            </p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="col-md-2 step-item">
+            <div class="step-circle">
+              <span>4</span>
+            </div>
+            <h5>Measuring Performance</h5>
+            <p>
+              After constructing the new application, we test and validate the
+              processes in the SAP system and scrutinize its performance.
+            </p>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="col-md-2 step-item">
+            <div class="step-circle">
+              <span>5</span>
+            </div>
+            <h5>Final Optimizations</h5>
+            <p>
+              Vital optimizations are implemented based on performance reports
+              and trial feedback, followed by a final handover of the
+              custom-built SAP ERP system.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img
+            src="https://epnovate.com/wp-content/uploads/2021/04/team11.jpg"
+            class="section-image"
+            alt="Experts"
+          />
+        </div>
+        <div class="col-md-6">
+          <h4 class="section-title-new">
+            Why is SAP Consulting Support Essential?
+          </h4>
+          <p>
+            A sophisticated application such as SAP requires vital
+            post-implementation and migration support for the businesses to reap
+            the benefits. We at ARS Software Solutions, take pride in giving the
+            highest priority for addressing our client’s obstacles. Leverage our
+            undisrupted support for SAP comprising monitoring, patch upgrades,
+            and landscape optimization. You can always reach out with queries at
+            our 24*7 helpline.
+          </p>
+          <p>
+            Our developers’ team can detect, analyze and solve any problem you
+            may come across. Additionally, you get a helpline available 24×7 to
+            solve all queries.
+          </p>
+          <ol>
+            <li>80+ Customers Served</li>
+            <li>100+ Projects Managed</li>
+            <li>10+ Years of Industry Experience</li>
+            <li>5+ Global Deliveries</li>
+            <li>Access to Big Data and IoT</li>
+            <li>10+ Years of SAP Expertise</li>
+          </ol>
+          <a
+            href=""
+            class="btn btn-outline-primary py-sm-3 px-sm-5 round animated slideInRight"
+            >Explore Our Work</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQs Start -->
+    <div class="container-fluid py-5">
+      <div class="container py-5">
+        <div
+          class="mx-auto text-center wow fadeIn"
+          data-wow-delay="0.1s"
+          style="max-width: 500px"
+        >
+          <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">
+            Popular FAQs
+          </div>
+          <h1 class="mb-4">Frequently Asked Questions</h1>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="accordion" id="accordionFAQ1">
+              <div class="accordion-item wow fadeIn" data-wow-delay="0.1s">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="false"
+                    aria-controls="collapseOne"
+                  >
+                    How long will it take to implement my desired SAP solutions?
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionFAQ1"
+                >
+                  <div class="accordion-body">
+                    At ARS Software Solutions, we work closely with our clients
+                    to define project timelines based on the specific SAP
+                    solutions being implemented. On average, implementation can
+                    range from a few weeks to several months depending on the
+                    complexity of the solution and business requirements. For a
+                    precise timeline, contact our team for a personalized
+                    consultation.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item wow fadeIn" data-wow-delay="0.2s">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    What are the most common solutions offered by SAP?
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionFAQ1"
+                >
+                  <div class="accordion-body">
+                    SAP offers a variety of enterprise solutions designed to
+                    meet diverse business needs. Some of the most commonly
+                    implemented SAP solutions include:
+                    <ul>
+                      <li>Customer Relationship Management (CRM)</li>
+                      <li>Supply Chain Management (SCM)</li>
+                      <li>Business Intelligence (BI)</li>
+                      <li>
+                        Production Planning (PP) and Quality Management (QM)
+                      </li>
+                      <li>Product Lifecycle Management (PLM)</li>
+                      <li>Human Capital Management (HCM)</li>
+                    </ul>
+                    These solutions can be tailored to your specific business
+                    requirements for maximum efficiency.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item wow fadeIn" data-wow-delay="0.3s">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    Can SAP solutions be integrated with my existing systems?
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionFAQ1"
+                >
+                  <div class="accordion-body">
+                    Yes, SAP solutions are designed to integrate with existing
+                    IT landscapes. Whether you are using legacy systems or
+                    third-party software, SAP can be configured to ensure
+                    seamless data flow and communication between systems,
+                    maximizing efficiency and minimizing disruptions.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item wow fadeIn" data-wow-delay="0.4s">
+                <h2 class="accordion-header" id="headingFour">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="true"
+                    aria-controls="collapseFour"
+                  >
+                    Will my SAP solutions be mobile-friendly?
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFour"
+                  data-bs-parent="#accordionFAQ1"
+                >
+                  <div class="accordion-body">
+                    Absolutely. SAP solutions are optimized for mobile use,
+                    allowing employees and managers to access key business
+                    insights, approve workflows, and manage operations from any
+                    device. This mobile accessibility is crucial in today’s
+                    fast-paced business environment.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="accordion" id="accordionFAQ2">
+              <div class="accordion-item wow fadeIn" data-wow-delay="0.5s">
+                <h2 class="accordion-header" id="headingFive">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive"
+                    aria-expanded="false"
+                    aria-controls="collapseFive"
+                  >
+                    Will you maintain my SAP systems after implementation?
+                  </button>
+                </h2>
+                <div
+                  id="collapseFive"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFive"
+                  data-bs-parent="#accordionFAQ2"
+                >
+                  <div class="accordion-body">
+                    Yes, we provide comprehensive post-implementation support
+                    and maintenance services. Our team ensures that your SAP
+                    systems continue to operate smoothly, providing updates,
+                    system monitoring, and technical support as needed.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item wow fadeIn" data-wow-delay="0.6s">
+                <h2 class="accordion-header" id="headingSix">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseSix"
+                    aria-expanded="false"
+                    aria-controls="collapseSix"
+                  >
+                    I’m on a strict budget. Are there affordable SAP solutions?
+                  </button>
+                </h2>
+                <div
+                  id="collapseSix"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingSix"
+                  data-bs-parent="#accordionFAQ2"
+                >
+                  <div class="accordion-body">
+                    SAP offers scalable solutions, allowing businesses of all
+                    sizes to implement SAP technology at a price that fits their
+                    budget. From cloud-based systems to modular implementations,
+                    we can tailor a solution that meets your financial
+                    constraints while delivering the functionality you need.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item wow fadeIn" data-wow-delay="0.7s">
+                <h2 class="accordion-header" id="headingSeven">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseSeven"
+                    aria-expanded="false"
+                    aria-controls="collapseSeven"
+                  >
+                    How can I ensure my SAP systems remain secure?
+                  </button>
+                </h2>
+                <div
+                  id="collapseSeven"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingSeven"
+                  data-bs-parent="#accordionFAQ2"
+                >
+                  <div class="accordion-body">
+                    SAP prioritizes security and offers advanced features like
+                    encryption, access controls, and automated security updates.
+                    In addition, our team provides ongoing monitoring and risk
+                    assessments to ensure your SAP environment remains protected
+                    from vulnerabilities and threats.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item wow fadeIn" data-wow-delay="0.8s">
+                <h2 class="accordion-header" id="headingEight">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseEight"
+                    aria-expanded="false"
+                    aria-controls="collapseEight"
+                  >
+                    Can I customize SAP to fit my unique business needs?
+                  </button>
+                </h2>
+                <div
+                  id="collapseEight"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingEight"
+                  data-bs-parent="#accordionFAQ2"
+                >
+                  <div class="accordion-body">
+                    Yes, SAP is highly customizable to meet the specific needs
+                    of your business. Whether you need custom workflows,
+                    integrations with third-party tools, or industry-specific
+                    features, we can tailor SAP solutions to help you achieve
+                    your business objectives.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQs Start -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 footer pt-5">
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+            <a href="/index" class="d-inline-block mb-3">
+              <h1 class="text-white">ARS Software Solutions</h1>
+            </a>
+            <p class="mb-0">
+              At ARS Software Solutions, our mission is to provide the best in
+              class SAP solutions to our clients by reducing their operational
+              costs and maximizing the return on investment. We are focused on
+              the best business outcomes.
+            </p>
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+            <h5 class="text-white mb-4">Get In Touch</h5>
+            <div class="d-flex mb-3">
+              <i
+                class="fa fa-map-marker-alt me-3"
+                style="vertical-align: top"
+              ></i>
+              <span>
+                Shoreham-by-Sea, Little High Street<br />
+                West Sussex <br />
+                BN43 5EG<br />
+                United Kingdom
+              </span>
+            </div>
+            <p><i class="fa fa-phone-alt me-3"></i>+91 7585787924</p>
+            <p>
+              <i class="fa fa-envelope me-3"></i>Info@arssoftwaresolutions.co.uk
+            </p>
+            <div class="d-flex pt-2">
+              <a class="btn btn-outline-light btn-social" href="/"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a class="btn btn-outline-light btn-social" href="/"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a class="btn btn-outline-light btn-social" href="/"
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a class="btn btn-outline-light btn-social" href="/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a class="btn btn-outline-light btn-social" href="/"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-2 wow fadeIn" data-wow-delay="0.5s">
+            <h5 class="text-white mb-4">Popular Link</h5>
+            <a class="btn btn-link" href="/">About Us</a>
+            <a class="btn btn-link" href="/">Contact Us</a>
+            <a class="btn btn-link" href="/">Privacy Policy</a>
+            <a class="btn btn-link" href="/">Terms & Condition</a>
+            <a class="btn btn-link" href="/">Career</a>
+          </div>
+          <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
+            <h5 class="text-white mb-4">Our Services</h5>
+            <a class="btn btn-link" href="/">Robotic Automation</a>
+            <a class="btn btn-link" href="/">Machine learning</a>
+            <a class="btn btn-link" href="/">Predictive Analysis</a>
+            <a class="btn btn-link" href="/">Data Science</a>
+            <a class="btn btn-link" href="/">Robot Technology</a>
+          </div>
+        </div>
+      </div>
+      <div class="container wow fadeIn" data-wow-delay="0.1s">
+        <div class="copyright">
+          <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+              <!-- &copy; <a class="border-bottom" href="/#">Azhar M</a>, All Right Reserved. -->
+
+              <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+              <div class="footer-menu">
+                <a href="/">Home</a>
+                <a href="/">Cookies</a>
+                <a href="/">Help</a>
+                <a href="/">FAQs</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../lib/wow/wow.min.js"></script>
+    <script src="../lib/easing/easing.min.js"></script>
+    <script src="../lib/waypoints/waypoints.min.js"></script>
+    <script src="../lib/counterup/counterup.min.js"></script>
+    <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="../js/main.js"></script>
+  </body>
+</html>

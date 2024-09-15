@@ -154,6 +154,32 @@ h6,
   background-color: black;
 }
 
+.hero-header-service-1 {
+  margin-top: -75px;
+  background: url(https://epnovate.com/wp-content/uploads/2021/06/hana-banner.jpg?id=9898)
+    center center no-repeat;
+  background-size: cover;
+
+  background-color: blue;
+}
+
+.hero-header-service-2 {
+  margin-top: -75px;
+  background: url(https://epnovate.com/wp-content/uploads/2021/07/WhatsApp-Image-2021-07-13-at-11.11.26-AM.jpeg?id=9984)
+    center center no-repeat;
+  background-size: cover;
+
+  background-color: blue;
+}
+.hero-header-service-3 {
+  margin-top: -75px;
+  background: url(https://epnovate.com/wp-content/uploads/2021/07/WhatsApp-Image-2021-07-16-at-6.03.32-PM-1.jpeg?id=10015)
+    center center no-repeat;
+  background-size: cover;
+
+  background-color: blue;
+}
+
 .hero-header .breadcrumb-item + .breadcrumb-item::before {
   color: var(--light);
 }
@@ -590,3 +616,40 @@ h6,
 /* li a {
   color: white !important;
 } */
+
+.number-header {
+  color: #1363c6;
+  font-size: 42px;
+}
+
+.domain-item {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.domain-item img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+.domain-item h6 {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.domain-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.domain-item.active {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.container-section {
+  background-color: #f0f7ff;
+  padding: 50px 0;
+}
